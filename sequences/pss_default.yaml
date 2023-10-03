@@ -24,7 +24,7 @@ measurements:
   - type: stripscan
     name: Stripscan
     strips: "1-1920"
-    enabled: true
+    enabled: false
     parameters:
       hv_channels: [A1, B1, C2]
       bias_voltage: -600 V
@@ -39,7 +39,7 @@ measurements:
           lv_channels: [1C05]
           lv_channels_istrip: [1A05]
           rpoly_r_minimum: 1 Mohm
-          rpoly_r_maximum: 2 Mohm
+          rpoly_r_maximum: 2.5 Mohm
       - type: istrip
         name: Istrip
         interval: 4

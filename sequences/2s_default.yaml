@@ -9,7 +9,7 @@ measurements:
       voltage_end: -1000 V
       voltage_step: -10 V
       waiting_time: 1 s
-      compliance: 25 uA
+      compliance: 20 uA
   - type: cv
     name: CV
     enabled: true
@@ -19,16 +19,16 @@ measurements:
       voltage_end: -600 V
       voltage_step: -5 V
       waiting_time: 1 s
-      compliance: 25 uA
+      compliance: 20 uA
       open_correction: false
   - type: stripscan
     name: Stripscan
     strips: "1-2032"
-    enabled: true
+    enabled: false
     parameters:
       hv_channels: [A1, B1, C2]
       bias_voltage: -600 V
-      bias_compliance: 25 uA
+      bias_compliance: 20 uA
     strip_measurements:
       - type: rpoly
         name: Rpoly
@@ -48,7 +48,7 @@ measurements:
           hv_channels: [A1, B1, C2]
           lv_channels: [1A05]
           istrip_i_minimum: 20 pA
-          istrip_i_maximum: 300 pA
+          istrip_i_maximum: 500 pA
       - type: idiel
         name: Idiel
         interval: 4
