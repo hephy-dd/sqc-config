@@ -25,6 +25,7 @@ measurements:
     name: Stripscan
     strips: "1-1920"
     enabled: false
+    auto_disable: false
     parameters:
       hv_channels: [A1, B1, C2]
       bias_voltage: -600 V
